@@ -1,11 +1,12 @@
-# Bitmon Marketplace
+# Bitmon Landing Website
 ## Structure
 
 | Codebase              |      Description          |
 | :-------------------- | :-----------------------: |
-| bitmon-api            |     Api server in Nest.js - In progress          |
-| bitmon-marketplace    |   Marketplace visualizator in Next.js - In progress            |
-| bitmon-seed-contract  | Solidity contract for Bitmons - In progress      |
+| bitmon-api - Private            |     Api server in Nest.js - In progress          |
+| [bitmon-marketspace](https://github.com/bitmonspace/marketspace)    |   Marketplace visualizator in Next.js - In progress            |
+| [bitmon-seed-contract](https://github.com/bitmonspace/contracts)  | Solidity contract for Bitmons - In progress      |
+| bitmon-website - This project        | Bitmon Landing Website - In progress |
 
 
 ## Branches
