@@ -1,6 +1,11 @@
-$color-primary: #faa916;
-$color-black: #050517;
-$color-white: #fff;
+$primary:#1a212c;
+$black: #131313;
+$yellow: #faa916;
+$white: #e6f1ff;
+$red: #f90a23;
+$white: #e6f1ff;
+$grey: #495670;
+$blue-light: #0074c1;
 
 $grid-columns: 12;
 $grid-gutter-width: 3rem;
@@ -19,3 +24,6 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
 );
+
+$font-family:'Mukta Vaani', sans-serif;
+$title-font-family: 'Megrim', cursive;

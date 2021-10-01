@@ -1,23 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["*"],
-      "@/components/*": ["components/*"],
+      "@/": ["/*"],
+      "@/components/*": ["./src/components/*"],
       "@/styles/*": ["styles/*"],
       "@/utils/*": ["utils/*"],
       "@/pages/*": ["pages/*"],
       "@/hooks/*": ["hooks/*"],
       "@/providers/*": ["providers/*"],
-      "@constant/*": ["constants/*"],
-      "@context/*": ["context/*"],
- 
+      "@/constant/*": ["constants/*"],
+      "@/context/*": ["context/*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,

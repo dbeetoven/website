@@ -1,24 +1,25 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import { ParallaxProvider } from 'react-scroll-parallax';
+import Header from "../components/Header";
+import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <Head>
-        <title>Bitmon Marketplace</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+    <Layout>
+      <ParallaxProvider>
 
-      <main>
+      <div>
         <h1>Bitmon Marketplace!</h1>
 
         <p >
           Throw a bunch of code and display the bitmons already !
         </p>
-      </main>
+        <Header/>
+      </div>
 
       <footer>Powered by Bixdy</footer>
-    </div>
+      </ParallaxProvider>
+    </Layout>
   );
 };
 
