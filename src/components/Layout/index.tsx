@@ -1,5 +1,8 @@
 import { ReactNode } from 'react'
-import styles from './styles.module.scss';
+import Navbar from '../Navbar'
+import Welcome from '../Welcome'
+import styles from './styles.module.scss'
+
 
 type Props = {
   children?: ReactNode
@@ -7,7 +10,11 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <main className={styles.main}>
-      <div>{children}</div>
+      <Welcome />
+      <div className={styles.container}>
+        <Navbar />
+        {children}
+      </div>
     </main>
   )
 }

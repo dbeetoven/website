@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix",
+    "lint": "next lint next lint --fix && npm run lint:scss",
+    "lint:scss": "stylelint 'app/**/*.scss' --syntax scss --fix ; exit 0",
+    "lint:js": "next lint",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "postinstall": "husky install"
   },
@@ -17,6 +19,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scroll-parallax": "^2.4.0",
+    "@react-icons/all-files": "^4.1.0",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.3.0"

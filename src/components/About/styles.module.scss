@@ -1,0 +1,21 @@
+@import 'app.scss';
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.description{
+padding: 1rem 0
+}
+.descTitle{
+ font-size: 2.5rem;
+ font-family: $title-font-family;
+ font-weight: 700;
+ margin-bottom: 0.5rem;
+}
+.descText{
+  margin:1rem
+}

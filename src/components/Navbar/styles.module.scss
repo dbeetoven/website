@@ -1,0 +1,35 @@
+@import 'app.scss';
+
+.siteTitle {
+  font-size: 4rem;
+  font-family: $title-font-family;
+  color: $white;
+
+  @media (max-width: 500px) {
+    & {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 10%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  backdrop-filter: blur(0px);
+}
+
+.navBurger {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.aboutUS {
+  color: $white;
+}

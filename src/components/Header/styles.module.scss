@@ -1,0 +1,50 @@
+@import 'app.scss';
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.siteTitle {
+  font-size: 4rem;
+  font-family: $title-font-family;
+  color: $white;
+
+  @media (max-width: 500px) {
+    & {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.headerTitle {
+  text-align: center;
+}
+
+.links {
+  width: 100%;
+  @include flex-center;
+  gap: 2rem;
+}
+
+.headerBTN {
+  @include button;
+  background: rgb(6, 14, 131);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 151, 0, 1) 0%,
+    rgba(251, 75, 2, 1) 100%
+  );
+  border: none;
+  &:hover {
+    background: rgb(0, 3, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 151, 0, 1) 0%,
+      rgba(251, 75, 2, 1) 100%
+    );
+  }
+}

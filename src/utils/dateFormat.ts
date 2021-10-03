@@ -1,9 +1,13 @@
-import { format, formatDistance, formatRelative, subDays } from 'date-fns';
+import { format, formatDistance, formatRelative, subDays } from 'date-fns'
 
-format(new Date(), "'Today is a' eeee");
+/**
+ * TODO: create generic format functions.
+ */
+
+format(new Date(), 'MM/dd/yyyy')
 //=> "Today is a Wednesday"
 
-formatDistance(subDays(new Date(), 3), new Date(), { addSuffix: true });
+formatDistance(subDays(new Date(), 3), new Date(), { addSuffix: true })
 //=> "3 days ago"
 
-formatRelative(subDays(new Date(), 3), new Date());
+formatRelative(subDays(new Date(), 3), new Date())
